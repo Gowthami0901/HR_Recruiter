@@ -201,35 +201,3 @@ Enhance the candidate experience with timely interactions and clear communicatio
 ### Informed Decision-Making
 Leverage predictive analytics and sentiment analysis to make more informed hiring decisions.
 
-## Getting Started
-
-### Prerequisites
-- Python 3.8 or higher
-- MongoDB
-- FastAPI
-- Uvicorn
-
-### Installation
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-repo/ai-powered-hr-recruiter.git
-   cd ai-powered-hr-recruiter
-   ```
-
-2. Install the required packages:
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-3. Set up MongoDB and configure the connection in `config/db.py`.
-
-4. Run the application:
-   ```sh
-   uvicorn main:app --reload
-   ```
-
-## Conclusion
-
-The AI-Powered HR Recruiter is transforming the hiring process by automating repetitive tasks, reducing bias, and providing valuable insights. By leveraging AI technology, companies can streamline their recruitment processes, improve the quality of hires, and create a more inclusive workplace. As AI continues to evolve, its role in HR will only become more significant, making it an indispensable tool for modern recruitment.
-
