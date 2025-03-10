@@ -53,6 +53,115 @@ Analyze the language used in candidate communications to gauge their sentiment a
 - The AI system analyzes the language used in candidate communications to gauge their sentiment and engagement levels.
 - It provides additional insights into a candidate's enthusiasm and cultural fit.
 
+### 8. Bot Call and WhatsApp Chatbot
+Enhance candidate engagement and streamline communication using bot calls and WhatsApp chatbots.
+
+**How it works:**
+- The AI system can initiate bot calls to candidates to gather their interest and availability.
+- WhatsApp chatbots can send automated messages to candidates, providing updates and gathering responses.
+
+### 9. Automatic Update Fields in Modal
+Automatically update fields in the modal based on user interactions and data changes.
+
+**How it works:**
+- The AI system dynamically updates modal fields to reflect the latest information, ensuring that users always have access to the most current data.
+
+### 10. Generate PDF from Job Description
+Generate a PDF document from the job description for easy sharing and documentation.
+
+**How it works:**
+- The AI system converts the job description into a PDF format, which can be downloaded and shared.
+
+### 11. Handle Download Logic
+Provide a seamless experience for downloading job descriptions and other documents.
+
+**How it works:**
+- The AI system handles the download logic, allowing users to download documents with a single click.
+
+### 12. Manage Jobs
+Easily manage job descriptions, including creating, updating, and deleting job descriptions.
+
+**How it works:**
+- The AI system provides a user-friendly interface for managing job descriptions, including options to create new job descriptions, update existing ones, and delete outdated ones.
+
+### 13. Schedule Interviews with Email, Bot Call, and WhatsApp Chat
+Schedule interviews and notify candidates via email, bot call, and WhatsApp chat.
+
+**How it works:**
+- The AI system schedules interviews and sends notifications to candidates via email, bot call, and WhatsApp chat, ensuring that candidates are informed and engaged throughout the process.
+
+### 14. Add Interview Rounds
+Add and manage multiple interview rounds for a comprehensive hiring process.
+
+**How it works:**
+- The AI system allows users to add and manage multiple interview rounds, including specifying panel members, interview dates, and times.
+
+### 15. Manage Users and Members
+Admin users can manage other users and panel members, including adding, updating, and deleting user and member information.
+
+**How it works:**
+- Admin users can access the "Manage Users" and "Manage Members" sections to add, update, and delete user and member information.
+
+### 16. Email Notifications
+Send email notifications to candidates and panel members for various events such as interview scheduling and updates.
+
+**How it works:**
+- The AI system sends automated email notifications to candidates and panel members, keeping them informed about interview schedules and updates.
+
+### 17. Call Transcription and Analysis
+Transcribe and analyze call conversations with candidates to determine their interest and engagement levels.
+
+**How it works:**
+- The AI system transcribes call conversations and analyzes the transcripts to determine candidate interest and engagement levels.
+
+### 18. Real-time Status Updates
+Provide real-time status updates for candidates throughout the recruitment process.
+
+**How it works:**
+- The AI system provides real-time status updates for candidates, allowing HR teams to track candidate progress and engagement levels.
+
+### 19. Fetch and Store Call Details
+Fetch and store call details from the Bland.ai API, including transcripts and call metadata.
+
+**How it works:**
+- The AI system fetches call details from the Bland.ai API and stores them in the MongoDB database, including transcripts and call metadata.
+
+### 20. Determine Candidate Interest
+Determine candidate interest based on call transcripts and update their status accordingly.
+
+**How it works:**
+- The AI system analyzes call transcripts to determine candidate interest and updates their status in the database.
+
+### 21. Manage Interview Panels
+Add, update, and delete interview panels for different interview rounds.
+
+**How it works:**
+- The AI system allows users to manage interview panels, including adding, updating, and deleting panel members for different interview rounds.
+
+### 22. Fetch and Display Candidates
+Fetch and display candidates for a specific job description, including their status and contact information.
+
+**How it works:**
+- The AI system fetches and displays candidates for a specific job description, including their status and contact information.
+
+### 23. Update Candidate Status
+Update candidate status based on their interactions and responses.
+
+**How it works:**
+- The AI system updates candidate status based on their interactions and responses, including interview scheduling, completion, and offer status.
+
+### 24. Send WhatsApp Messages
+Send WhatsApp messages to candidates for interview scheduling and updates.
+
+**How it works:**
+- The AI system sends WhatsApp messages to candidates for interview scheduling and updates, using the WhatsApp API.
+
+### 25. Send Email Notifications to Panel Members
+Send email notifications to panel members for interview scheduling and updates.
+
+**How it works:**
+- The AI system sends email notifications to panel members for interview scheduling and updates, keeping them informed about interview schedules and updates.
+
 ## How It Works
 
 ### Step 1: Job Posting and Criteria Definition
@@ -121,6 +230,39 @@ Leverage predictive analytics and sentiment analysis to make more informed hirin
    uvicorn main:app --reload
    ```
 
+## Folder Structure
+
+### `main.py`
+The entry point of the application. It sets up the FastAPI app, includes routers, and handles startup events.
+
+### `config/db.py`
+Contains the configuration for connecting to the MongoDB database.
+
+### `models/`
+Contains the Pydantic models for various entities such as `User`, `Admin`, `Members`, and `LoginRequest`.
+
+### `schemas/`
+Contains the schema definitions for transforming database entities into JSON serializable formats.
+
+### `routes/`
+Contains the FastAPI route handlers for different functionalities:
+- `user.py`: Handles user-related operations.
+- `admin_router.py`: Handles admin-related operations.
+- `members_router.py`: Handles panel member-related operations.
+- `response_router.py`: Handles candidate response-related operations.
+- `login_router.py`: Handles login-related operations.
+- `password_reset.py`: Handles password reset operations.
+
+### `exceptions/`
+Contains custom exception classes used throughout the application.
+
+### `requirements.txt`
+Lists all the dependencies required to run the application.
+
 ## Conclusion
 
 The AI-Powered HR Recruiter is transforming the hiring process by automating repetitive tasks, reducing bias, and providing valuable insights. By leveraging AI technology, companies can streamline their recruitment processes, improve the quality of hires, and create a more inclusive workplace. As AI continues to evolve, its role in HR will only become more significant, making it an indispensable tool for modern recruitment.
+
+---
+
+Thank you for using the AI-Powered HR Recruiter! We hope this tool helps you find the best talent efficiently and effectively.
